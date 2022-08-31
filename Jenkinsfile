@@ -24,9 +24,11 @@ pipeline {
     }
   post{
     always{
+        echo 'post - always'
       //run as postcondition no matter what job results 
     }
     failure{
+        echo 'post - failure'
     }
   }
 }
