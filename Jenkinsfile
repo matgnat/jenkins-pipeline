@@ -5,7 +5,7 @@ pipeline {
     }
     parameters {
         string(name: 'ENV', defaultValue: 'nuke-dev', description: 'environment to run test on') 
-        choice(name: 'ENV', choinces: ['nuke-dev','nuke-demo','br-sit','nuke-pre-prod','azure'])
+        choice(name: 'ENV', choices: ['nuke-dev','nuke-demo','br-sit','nuke-pre-prod','azure'])
     }
     environment {
         NEW_VERSION = '1.3.0'
