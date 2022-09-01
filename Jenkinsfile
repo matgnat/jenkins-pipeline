@@ -13,8 +13,11 @@ pipeline {
     stages{
         stage('Build'){
             steps{
-                echo 'execute stage BUILD'
                 echo "building version ${NEW_VERSION}"
+                script {
+                    gv = load "script.groovy"
+                    gv.print()
+                }
             }         
         }
         stage('Test'){
