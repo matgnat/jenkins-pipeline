@@ -20,7 +20,7 @@ pipeline {
         stage('Test'){
             when {
                 expression {
-                    env.BRANCH_NAME = 'master' // steps will be executed if expression pass
+                    env.BRANCH_NAME = 'main' // steps will be executed if expression pass
                 }
             }
             steps{
